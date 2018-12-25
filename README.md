@@ -1,5 +1,5 @@
 # 系统分析与设计秋季学期大作业-前端
-这是一个点餐系统，包含用户点餐、商家出餐、管理员管理三部分功能
+这是一个点餐系统，包含用户点餐、商家出餐、管理员管理三部分功能。[![Build Status](https://travis-ci.org/sa-2018-fall/sa-fe.svg?branch=master)](https://travis-ci.org/sa-2018-fall/sa-fe)
 
 ## 使用的框架、插件等
 
