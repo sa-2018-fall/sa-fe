@@ -36,12 +36,12 @@ export function _sendCode (phone) {
   return basePOST(API.sendCode, { phone })
 }
 
-export function _register (phone, password, checkCode) {
-  return basePOST(API.register, { phone, password, checkCode })
+export function _register (phone, password) {
+  return basePOST(API.register, { phone, password })
 }
 
-export function _reset (phone, password, checkCode) {
-  return basePOST(API.reset, { phone, password, checkCode })
+export function _reset (phone, password) {
+  return basePOST(API.reset, { phone, password })
 }
 
 export function _logOutApi (userId) {

@@ -11,10 +11,10 @@
         <el-form-item prop="checkPass">
           <el-input placeholder="确认密码" type="password" v-model="ruleForm.checkPass" auto-complete="off"></el-input>
         </el-form-item>
-        <el-form-item prop="code" class='codeProp'>
+        <!-- <el-form-item prop="code" class='codeProp'>
           <el-input class='setCode' placeholder="验证码" type="text" v-model="ruleForm.checkCode" auto-complete="off"></el-input>
           <el-button class='getCode' :disabled='disabled' type="primary" @click="sendCode">{{codeText}}</el-button>
-        </el-form-item>
+        </el-form-item> -->
         <el-form-item>
           <el-button class='submit' type="primary" @click="submitForm('ruleForm')">重置密码</el-button>
         </el-form-item>

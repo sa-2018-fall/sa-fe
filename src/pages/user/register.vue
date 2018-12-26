@@ -9,14 +9,14 @@
         <el-form-item prop="pass">
           <el-input placeholder="密码" type="password" v-model="ruleForm.pass" auto-complete="off"></el-input>
         </el-form-item>
-        <el-form-item prop="code" class='codeProp'>
+        <!-- <el-form-item prop="code" class='codeProp'> -->
           <!-- <el-input v-model="ruleForm.code" class="setCode" placeholder="验证码" ></el-input>
           <div class="code" @click="refreshCode">
               <s-identify :identifyCode="identifyCode"></s-identify>
           </div> -->
-          <el-input class='setCode' placeholder="验证码" type="text" v-model="ruleForm.code" auto-complete="off"></el-input>
-          <el-button class='getCode' :disabled='disabled' type="primary" @click="sendCode">{{codeText}}</el-button>
-        </el-form-item>
+          <!-- <el-input class='setCode' placeholder="验证码" type="text" v-model="ruleForm.code" auto-complete="off"></el-input>
+          <el-button class='getCode' :disabled='disabled' type="primary" @click="sendCode">{{codeText}}</el-button> -->
+        <!-- </el-form-item> -->
         <el-form-item>
           <el-button class='submit' type="primary" @click="register('ruleForm')">注册</el-button>
         </el-form-item>
@@ -88,8 +88,8 @@ export default {
     register (formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          const { pass, code, phone } = this.ruleForm
-          _register(phone, pass, code).then(obj => {
+          const { pass, phone } = this.ruleForm
+          _register(phone, pass).then(obj => {
             if (obj.code === 1) {
               this.$message({
                 showClose: true,
