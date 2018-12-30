@@ -24,7 +24,7 @@
 顶层就是vue-cli的结构，主要看前端src和后台server的结构
 
 ``` md
-─ src
+─.
  ├── common                         #
  │  ├── audio                       #音频
  │  ├── images                      #图片
